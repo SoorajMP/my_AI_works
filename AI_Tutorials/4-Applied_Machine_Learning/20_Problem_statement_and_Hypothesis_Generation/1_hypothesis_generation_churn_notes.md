@@ -69,12 +69,13 @@ mindmap
 ### 2. Behavioural
 *What the customer does with the account*
 
-| Hypothesis | Reasoning |
-|---|---|
-| Long-tenure ("vintage") customers churn less | Trust built over time → loyalty |
-| Higher average balance → less churn | More "skin in the game" |
-| Unfollowed bank on social media → more churn | Disengagement as early signal |
-| Recently closed a loan → more churn | No active product tying them to bank |
+```mermaid
+flowchart LR
+    A1[Long tenure / vintage customer] --> A2[Trust built over time] --> A3[Higher loyalty] --> A4((Lower churn))
+    B1[Higher average balance] --> B2[More skin in the game] --> B5((Lower churn))
+    C1[Unfollowed bank on social media] --> C2[Signals disengagement] --> C5((Higher churn))
+    D1[Recently closed a loan] --> D2[No active product tying them to bank] --> D5((Higher churn))
+```
 
 ---
 
@@ -113,12 +114,17 @@ Note: churn isn't only about the customer — it's relative to market alternativ
 
 ## Quick Reference
 
-| Category | Captures | Example |
-|---|---|---|
-| Demographics | Static personal attributes | Younger customers churn more |
-| Behavioural | Bank interaction | High balance → less churn |
-| Psychographic | Personality/lifestyle | Frequent job-switchers churn more |
-| Miscellaneous | Competitive pressure | Lower FD rate vs. competitors → churn |
+```mermaid
+graph TD
+    Demographics["Demographics
+    Static personal attributes"] --> DemoEx["e.g. Younger customers churn more"]
+    Behavioural["Behavioural
+    Bank interaction"] --> BehEx["e.g. High balance → less churn"]
+    Psychographic["Psychographic
+    Personality / lifestyle"] --> PsyEx["e.g. Frequent job-switchers churn more"]
+    Miscellaneous["Miscellaneous
+    Competitive pressure"] --> MiscEx["e.g. Lower FD rate vs. competitors → churn"]
+```
 
 ---
 

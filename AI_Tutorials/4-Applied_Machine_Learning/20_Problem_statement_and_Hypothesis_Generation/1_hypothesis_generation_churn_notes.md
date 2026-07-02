@@ -5,6 +5,16 @@
 
 ---
 
+## Introduction
+
+- **What:** Hypothesis generation is the practice of listing out possible factors/drivers behind an outcome (here, customer churn) *before* looking at any dataset — using domain knowledge, intuition, and structured brainstorming instead of data patterns.
+- **Why:** Jumping straight into data analysis biases you toward only the variables that already exist in the dataset. Hypothesizing first surfaces factors you might not have data for yet, and gives you a checklist to validate the dataset against later. It shifts the starting point from "what does the data show" to "what should we be looking for."
+- **When:** This happens at the very start of the data science lifecycle — right after the problem statement is defined, and before data collection/EDA (exploratory data analysis) begins. It's a pre-data step.
+- **How:** Structure the brainstorm using broad categories first (e.g. demographics, behaviour, psychographics, external factors), then drill into each category and list specific, testable hypotheses. No hypothesis is filtered out at this stage for "sounding wrong" — exhaustiveness matters more than precision here.
+- **Where:** Applicable to any predictive/classification problem in a business context — churn, fraud, default risk, conversion, attrition — anywhere you need to explain or predict a customer/user outcome using multiple candidate drivers.
+
+---
+
 ## Problem Statement
 
 - Goal: identify customer segments most likely to churn
